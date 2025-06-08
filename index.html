@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mon Panier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .item img {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 5px 0;
+    }
+
+    .like.liked {
+      color: red;
+    }
+
+    .like {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 20px;
+    }
+
+    .delete {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🛒 Mon Panier</h2>
+
+  <div class="item">
+    <img src="images/image 1.avif" alt="Chaussures" />
+    <div class="details">
+      <h4>Chaussures de sport</h4>
+      <p>Prix: <span class="price">49.99</span> €</p>
+      <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">1</span>
+        <button class="plus">+</button>
+      </div>
+      <button class="like">❤️</button>
+      <button class="delete">🗑️</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="images/image 2.png" alt="Sac à dos" />
+    <div class="details">
+      <h4>Sac à dos</h4>
+      <p>Prix: <span class="price">35.00</span> €</p>
+      <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">2</span>
+        <button class="plus">+</button>
+      </div>
+      <button class="like">❤️</button>
+      <button class="delete">🗑️</button>
+    </div>
+  </div>
+
+  <h3>Total: <span id="total">0.00</span> €</h3>
+
+  <script src="script.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
